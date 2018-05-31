@@ -1,0 +1,18 @@
+{
+  "action_fingerprints": {
+    "action_listen": {
+      "slots": [
+        "image_type",
+        "memory_size",
+        "num_of_cpus"
+      ]
+    }
+  },
+  "max_history": 3,
+  "rasa_core": "0.8.6",
+  "policy_names": [
+    "rasa_core.policies.memoization.MemoizationPolicy",
+    "policy.CloudPolicy"
+  ],
+  "ensemble_name": "rasa_core.policies.ensemble.SimplePolicyEnsemble"
+}

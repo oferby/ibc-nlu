@@ -1,0 +1,359 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [],
+    "common_examples": [
+      {
+        "text": "add new vm",
+        "entities": [],
+        "intent": "create_ecs"
+      },
+      {
+        "text": "create new ecs",
+        "entities": [],
+        "intent": "create_ecs"
+      },
+      {
+        "text": "create ubuntu server",
+        "entities": [
+          {
+            "value": "ubuntu",
+            "end": 13,
+            "start": 7,
+            "entity": "image_type"
+          }
+        ],
+        "intent": "create_ecs"
+      },
+      {
+        "text": "add ubuntu 16 server",
+        "entities": [
+          {
+            "value": "ubuntu",
+            "end": 10,
+            "start": 4,
+            "entity": "image_type"
+          }
+        ],
+        "intent": "create_ecs"
+      },
+      {
+        "text": "I need new ecs with ubuntu image",
+        "entities": [
+          {
+            "value": "ubuntu",
+            "end": 26,
+            "start": 20,
+            "entity": "image_type"
+          }
+        ],
+        "intent": "create_ecs"
+      },
+      {
+        "text": "I want ecs with 1 cpu and ubuntu 16.4 image",
+        "entities": [
+          {
+            "value": "1",
+            "end": 17,
+            "start": 16,
+            "entity": "num_of_cpu"
+          },
+          {
+            "value": "ubuntu 16.4",
+            "end": 37,
+            "start": 26,
+            "entity": "image_type"
+          }
+        ],
+        "intent": "create_ecs"
+      },
+      {
+        "text": "create new ecs with 4 cpu and 8gb memory with ubuntu 16.4 image",
+        "entities": [
+          {
+            "value": "4",
+            "end": 21,
+            "start": 20,
+            "entity": "num_of_cpu"
+          },
+          {
+            "value": "8gb",
+            "end": 33,
+            "start": 30,
+            "entity": "memory_size"
+          },
+          {
+            "value": "ubuntu",
+            "end": 52,
+            "start": 46,
+            "entity": "image_type"
+          }
+        ],
+        "intent": "create_ecs"
+      },
+      {
+        "text": "please add new ecs with 2 vcpu 4gb memory and Fedora image",
+        "entities": [
+          {
+            "value": "2",
+            "end": 25,
+            "start": 24,
+            "entity": "num_of_cpu"
+          },
+          {
+            "value": "4gb",
+            "end": 34,
+            "start": 31,
+            "entity": "memory_size"
+          },
+          {
+            "value": "Fedora",
+            "end": 52,
+            "start": 46,
+            "entity": "image_type"
+          }
+        ],
+        "intent": "create_ecs"
+      },
+      {
+        "text": "create new server with Fedora 64bit 2 cpu and 8gb memory ",
+        "entities": [
+          {
+            "value": "2",
+            "end": 37,
+            "start": 36,
+            "entity": "num_of_cpu"
+          },
+          {
+            "value": "8gb",
+            "end": 49,
+            "start": 46,
+            "entity": "memory_size"
+          },
+          {
+            "value": "Fedora",
+            "end": 29,
+            "start": 23,
+            "entity": "image_type"
+          }
+        ],
+        "intent": "create_ecs"
+      },
+      {
+        "text": "create bms",
+        "entities": [],
+        "intent": "create_bms"
+      },
+      {
+        "text": "add new bare metal server",
+        "entities": [],
+        "intent": "create_bms"
+      },
+      {
+        "text": "create new bare metal server with ubuntu 16.4 image",
+        "entities": [
+          {
+            "value": "ubuntu",
+            "end": 40,
+            "start": 34,
+            "entity": "image_type"
+          }
+        ],
+        "intent": "create_bms"
+      },
+      {
+        "text": "new bms with windows image",
+        "entities": [
+          {
+            "value": "windows",
+            "end": 20,
+            "start": 13,
+            "entity": "image_type"
+          }
+        ],
+        "intent": "create_bms"
+      },
+      {
+        "text": "show me running ecs",
+        "entities": [
+          {
+            "value": "running",
+            "end": 15,
+            "start": 8,
+            "entity": "vm_state"
+          }
+        ],
+        "intent": "show_ecs"
+      },
+      {
+        "text": "I want list of all my ecs machines",
+        "entities": [],
+        "intent": "show_ecs"
+      },
+      {
+        "text": "show list of all ecs",
+        "entities": [],
+        "intent": "show_ecs"
+      },
+      {
+        "text": "show me all my vms",
+        "entities": [],
+        "intent": "show_ecs"
+      },
+      {
+        "text": "show me my bare metal servers",
+        "entities": [],
+        "intent": "show_bms"
+      },
+      {
+        "text": "show me a list of my bms",
+        "entities": [],
+        "intent": "show_bms"
+      },
+      {
+        "text": "start ecs server1",
+        "entities": [
+          {
+            "value": "start",
+            "end": 5,
+            "start": 0,
+            "entity": "vm_state"
+          },
+          {
+            "value": "server1",
+            "end": 17,
+            "start": 10,
+            "entity": "name"
+          }
+        ],
+        "intent": "ecs_change_state"
+      },
+      {
+        "text": "stop server3",
+        "entities": [
+          {
+            "value": "stop",
+            "end": 4,
+            "start": 0,
+            "entity": "vm_state"
+          },
+          {
+            "value": "server3",
+            "end": 12,
+            "start": 5,
+            "entity": "name"
+          }
+        ],
+        "intent": "ecs_change_state"
+      },
+      {
+        "text": "restart my server",
+        "entities": [
+          {
+            "value": "restart",
+            "end": 7,
+            "start": 0,
+            "entity": "vm_state"
+          }
+        ],
+        "intent": "ecs_change_state"
+      },
+      {
+        "text": "delete vm web111",
+        "entities": [
+          {
+            "value": "delete",
+            "end": 6,
+            "start": 0,
+            "entity": "vm_state"
+          },
+          {
+            "value": "web111",
+            "end": 16,
+            "start": 10,
+            "entity": "name"
+          }
+        ],
+        "intent": "ecs_change_state"
+      },
+      {
+        "text": "delete ecs server db100",
+        "entities": [
+          {
+            "value": "delete",
+            "end": 6,
+            "start": 0,
+            "entity": "vm_state"
+          },
+          {
+            "value": "db100",
+            "end": 23,
+            "start": 18,
+            "entity": "name"
+          }
+        ],
+        "intent": "ecs_change_state"
+      },
+      {
+        "text": "I want to add new ecs",
+        "entities": [],
+        "intent": "create_ecs"
+      },
+      {
+        "text": "hello",
+        "entities": [],
+        "intent": "greeting"
+      },
+      {
+        "text": "hi",
+        "entities": [],
+        "intent": "greeting"
+      },
+      {
+        "text": "bye",
+        "entities": [],
+        "intent": "bye"
+      },
+      {
+        "text": "thanks",
+        "entities": [],
+        "intent": "bye"
+      },
+      {
+        "text": "that's all",
+        "entities": [],
+        "intent": "bye"
+      },
+      {
+        "text": "yes",
+        "entities": [],
+        "intent": "confirm"
+      },
+      {
+        "text": "yep",
+        "entities": [],
+        "intent": "confirm"
+      },
+      {
+        "text": "nop",
+        "entities": [],
+        "intent": "deny"
+      },
+      {
+        "text": "no",
+        "entities": [],
+        "intent": "deny"
+      },
+      {
+        "text": "I confirm",
+        "entities": [],
+        "intent": "confirm"
+      },
+      {
+        "text": "cancel",
+        "entities": [],
+        "intent": "deny"
+      }
+    ],
+    "entity_synonyms": []
+  }
+}
