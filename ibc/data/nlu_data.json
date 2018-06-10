@@ -373,6 +373,107 @@
         "text": "create bms",
         "intent": "create_bms",
         "entities": []
+      },
+      {
+        "text": "I need new ubuntu server",
+        "intent": "create_ecs",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "ubuntu",
+            "entity": "image_type"
+          }
+        ]
+      },
+      {
+        "text": "I would like to have new server",
+        "intent": "create_ecs",
+        "entities": []
+      },
+      {
+        "text": "5",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 1,
+            "value": "5",
+            "entity": "@number"
+          }
+        ]
+      },
+      {
+        "text": "windows",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "windows",
+            "entity": "image_type"
+          }
+        ]
+      },
+      {
+        "text": "45",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 2,
+            "value": "45",
+            "entity": "@number"
+          }
+        ]
+      },
+      {
+        "text": "6",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 1,
+            "value": "6",
+            "entity": "@number"
+          }
+        ]
+      },
+      {
+        "text": "fedora",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "fedora",
+            "entity": "image_type"
+          }
+        ]
+      },
+      {
+        "text": "centos",
+        "intent": "",
+        "entities": [
+          {
+            "start": 0,
+            "end": 6,
+            "value": "centos",
+            "entity": "image_type"
+          }
+        ]
+      },
+      {
+        "text": "I want new centos server",
+        "intent": "create_ecs",
+        "entities": [
+          {
+            "start": 11,
+            "end": 17,
+            "value": "centos",
+            "entity": "image_type"
+          }
+        ]
       }
     ]
   }
